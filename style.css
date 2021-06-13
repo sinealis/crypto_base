@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,600;1,400&display=swap');
+
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+body {
+	font-family: 'Raleway', sans-serif;
+	background: #e6e6e6;
+}
+body::before {
+	display: block;
+	content: "";
+	height: 50px;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+.btn-primary {
+	background-color: #6c63ff;
+	color: #fafafa;
+	border: none;
+}
+.btn-primary:hover {
+	background-color: #504BBF;
+	color: #fafafa;
+}
+.bi {
+	color: #6c63ff;
+}
+p {
+	font-weight: 400;
+}
+#nav .navbar-brand {
+	color: #6c63ff;
+}
+.accordion-button {
+	font-weight: 600;
+}
+
+#people {
+	background-color: #6c63ff;
+	color: #fafafa;
+}
+
+#people .card {
+	background: #fafafa;
+	color: #222;
+}
+footer {
+	color: #fafafa;
+}
+footer a:hover {
+	opacity: 0.85;
+}
+
+/* Medium devices */
+@media (min-width: 768px) {
+	.news-input {
+		width: 50%;
+	}
+}
+
+/* X-Small devices portrait phones, less than 576px */
+@media (max-width: 575.98px) {
+	h1 {
+		font-size: 1.5em; /* 24px/16px */
+	}
+	h2 {
+		font-size: 1.375em; /* 22px/16px */
+	}
+	h3 {
+		font-size: 1.25em; /* 20px/16px */
+	}
+	.btn-primary, .lead, p {
+		font-size: 0.9375em; /* 15px/16px */
+	}
+
+}
+
+/* Small devices landscape phones, less than 768px */
+@media (max-width: 767.98px) {
+	#nav {
+		padding-top: 12px!important;
+		padding-bottom: 12px!important;
+	}
+	h1 {
+		font-size: 1.75em; /* 28px */
+	}
+	h2 {
+		font-size: 1.625em; /* 26px */
+	}
+	h3 {
+		font-size: 1.5em; /* 24px */
+	}
+	.btn-primary, .lead, p {
+		font-size: 1em; /* 16px */
+	}
+	#intro, #terminology, #block, #btc, #questions, #people, #newsletter, #footer {
+		padding: 1.5em!important;
+	}
+	.accordion-button {
+		font-size: 0.682em;
+	}
+	.accordion-body {
+		font-size: 0.8750em;
+	}
+	#people h2 {
+		margin-bottom: 1em!important;
+	}
+	#arrow-up {
+		padding: 1.5em!important;
+	}
+}
+
+/* Medium devices tablets less than 992px */
+@media (max-width: 991.98px) {
+	#intro, #terminology, #block, #btc, #questions, #people, #newsletter, #footer {
+		padding: 2em!important;
+	}
+
+}
